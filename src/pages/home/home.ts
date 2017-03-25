@@ -17,10 +17,6 @@ export class HomePage {
 
   slideChanged()
   {
-
-
-
-
     if (this.slides.getActiveIndex() == 2) //Short-term test with no music
     {
       this.slides.lockSwipes(true);
@@ -28,6 +24,8 @@ export class HomePage {
       //1 min from now
       var countDownDate = new Date();
       countDownDate.setMinutes(countDownDate.getMinutes() + 1);
+
+      var scope = this;
 
       var checkTimeLeft = setInterval(function() {
         // Get todays date and time
@@ -42,7 +40,8 @@ export class HomePage {
 
           console.log("expired");
 
-          this.slides.slideTo(3);
+          scope.slides.lockSwipes(false);
+          scope.slides.slideTo(3);
         }
       }, 1000);
     }
