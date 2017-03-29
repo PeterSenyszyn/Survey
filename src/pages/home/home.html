@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Survey for UGS 303 - Created by Peter Senyszyn
+      Survey Software for UGS 303 - Created by Peter Senyszyn
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -32,8 +32,103 @@
     </ion-slide>
 
     <ion-slide>
+      How many words do you remember? <br>
+      Only type and submit one word at a time. <br> <br> <br> <br> <br>
 
+      <ion-item>
+        <ion-label color="primary"> Word </ion-label>
+        <ion-input placeholder="Type word here" type="text" [(ngModel)]="wordInput"> </ion-input>
+      </ion-item>
+
+      <button ion-button (click)="submitWord()"> Submit </button>
+
+      <br> <br> <br> <br> <br>
+
+      Once you have typed all that you can remember, press finish. <br>
+
+      <button ion-button (click)="finish(1)"> Finish </button>
     </ion-slide>
 
+    <ion-slide>
+      Read and memorize the following set of words while listening to classical music. <br>
+      The program will automatically slide pages when your time is done. <br> <br> <br> <br> <br>
+
+      <img src="assets/table2.png" />
+    </ion-slide>
+
+    <ion-slide>
+      How many words do you remember? <br>
+      Only type and submit one word at a time. <br> <br> <br> <br> <br>
+
+      <ion-item>
+        <ion-label color="primary"> Word </ion-label>
+        <ion-input placeholder="Type word here" type="text" [(ngModel)]="wordInput"> </ion-input>
+      </ion-item>
+
+      <button ion-button (click)="submitWord()"> Submit </button>
+
+      <br> <br> <br> <br> <br>
+
+      Once you have typed all that you can remember, press finish. <br>
+
+      <button ion-button (click)="finish(2)"> Finish </button>
+    </ion-slide>
+
+    <ion-slide>
+      Read and memorize the following set of words while listening to pop music. <br>
+      The program will automatically slide pages when your time is done. <br> <br> <br> <br> <br>
+
+      <img src="assets/table3.png" />
+    </ion-slide>
+
+    <ion-slide>
+      How many words do you remember? <br>
+      Only type and submit one word at a time. <br> <br> <br> <br> <br>
+
+      <ion-item>
+        <ion-label color="primary"> Word </ion-label>
+        <ion-input placeholder="Type word here" type="text" [(ngModel)]="wordInput"> </ion-input>
+      </ion-item>
+
+      <button ion-button (click)="submitWord()"> Submit </button>
+
+      <br> <br> <br> <br> <br>
+
+      Once you have typed all that you can remember, press finish. <br>
+
+      <button ion-button (click)="finish(3)"> Finish </button>
+    </ion-slide>
+
+    <ion-slide>
+      Read and memorize the following set of words while listening to hip hop music. <br>
+      The program will automatically slide pages when your time is done. <br> <br> <br> <br> <br>
+
+      <img src="assets/table4.png" />
+    </ion-slide>
+
+    <ion-slide>
+      How many words do you remember? <br>
+      Only type and submit one word at a time. <br> <br> <br> <br> <br>
+
+      <ion-item>
+        <ion-label color="primary"> Word </ion-label>
+        <ion-input placeholder="Type word here" type="text" [(ngModel)]="wordInput"> </ion-input>
+      </ion-item>
+
+      <button ion-button (click)="submitWord()"> Submit </button>
+
+      <br> <br> <br> <br> <br>
+
+      Once you have typed all that you can remember, press finish. <br>
+
+      <button ion-button (click)="finish(4)"> Finish </button>
+    </ion-slide>
+
+    <ion-slide>
+      You are now finished with the short-term textual memory portion of the survey! <br>
+      Please press continue below to move onto the short-term graphical memory portion of the survey! <br> <br> <br> <br> <br>
+
+      <button ion-button (click)="moveOn()"> Continue </button>
+    </ion-slide>
   </ion-slides>
 </ion-content>

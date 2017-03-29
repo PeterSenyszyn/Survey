@@ -1,0 +1,113 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title> Survey Software for UGS 303 - Created by Peter Senyszyn </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-slides pager (ionSlideDidChange)="slideChanged()">
+    <ion-slide>
+      Now it's time to test short-term graphical memory. <br>
+      Please play the following game at "very fast" speed and "animals" setting. 
+      Press the space bar whenever you see a repeated image. <br> <br>
+
+      <iframe width="550" height="365" src="http://memorylosstest.com/dl/embed1.html" frameborder="0" scrolling="no"></iframe> <br>
+
+      Now please record your "memory score %" and "average response time" below. <br>
+
+      <ion-list>
+        <ion-item>
+          <ion-label color="primary"> Memory Score % </ion-label>
+          <ion-input placeholder="Enter memory score %" type="text" [(ngModel)]="memoryScoreInput"> </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label color="primary"> Average Response Time </ion-label>
+          <ion-input placeholder="Enter average response time" type="text" [(ngModel)]="avgResponseTimeInput"> </ion-input>
+        </ion-item>
+
+        <button ion-button (click)="save(0)"> Save data </button>
+      </ion-list>
+    </ion-slide>
+
+    <ion-slide>
+      Now it's time to test short-term graphical memory with classical music. <br>
+      Please play the following game at "very fast" speed and "animals" setting. 
+      Press the space bar whenever you see a repeated image. <br> <br>
+
+      <iframe width="550" height="365" src="http://memorylosstest.com/dl/embed1.html" frameborder="0" scrolling="no"></iframe> <br>
+
+      Now please record your "memory score %" and "average response time" below. <br>
+
+      <ion-list>
+        <ion-item>
+          <ion-label color="primary"> Memory Score % </ion-label>
+          <ion-input placeholder="Enter memory score %" type="text" [(ngModel)]="memoryScoreInput"> </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label color="primary"> Average Response Time </ion-label>
+          <ion-input placeholder="Enter average response time" type="text" [(ngModel)]="avgResponseTimeInput"> </ion-input>
+        </ion-item>
+
+        <button ion-button (click)="save(1)"> Save data </button>
+      </ion-list>
+    </ion-slide>
+
+    <ion-slide>
+      Now it's time to test short-term graphical memory with pop music. <br>
+      Please play the following game at "very fast" speed and "animals" setting. 
+      Press the space bar whenever you see a repeated image. <br> <br>
+
+      <iframe width="550" height="365" src="http://memorylosstest.com/dl/embed1.html" frameborder="0" scrolling="no"></iframe> <br>
+
+      Now please record your "memory score %" and "average response time" below. <br>
+
+      <ion-list>
+        <ion-item>
+          <ion-label color="primary"> Memory Score % </ion-label>
+          <ion-input placeholder="Enter memory score %" type="text" [(ngModel)]="memoryScoreInput"> </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label color="primary"> Average Response Time </ion-label>
+          <ion-input placeholder="Enter average response time" type="text" [(ngModel)]="avgResponseTimeInput"> </ion-input>
+        </ion-item>
+
+        <button ion-button (click)="save(2)"> Save data </button>
+      </ion-list>
+    </ion-slide>
+
+    <ion-slide>
+      Now it's time to test short-term graphical memory with hip hop music. <br>
+      Please play the following game at "very fast" speed and "animals" setting. 
+      Press the space bar whenever you see a repeated image. <br> <br>
+
+      <iframe width="550" height="365" src="http://memorylosstest.com/dl/embed1.html" frameborder="0" scrolling="no"></iframe> <br>
+
+      Now please record your "memory score %" and "average response time" below. <br>
+
+      <ion-list>
+        <ion-item>
+          <ion-label color="primary"> Memory Score % </ion-label>
+          <ion-input placeholder="Enter memory score %" type="text" [(ngModel)]="memoryScoreInput"> </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label color="primary"> Average Response Time </ion-label>
+          <ion-input placeholder="Enter average response time" type="text" [(ngModel)]="avgResponseTimeInput"> </ion-input>
+        </ion-item>
+
+        <button ion-button (click)="save(3)"> Save data </button>
+      </ion-list>
+    </ion-slide>
+
+    <ion-slide>
+      That's it for now! Long-term memory tests will be coming soon.... <br> <br> <br>
+
+      Thank you for participating in the survey!
+    </ion-slide>
+  </ion-slides>
+</ion-content>
