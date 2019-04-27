@@ -18,7 +18,7 @@
 
         try
         {
-            $db = new PDO('mysql:host=localhost;dbname=anpeca_petersenyszyn_surveyproject;charset=utf8mb4', 'anpeca_peter', 'abc154110!');
+            $db = new PDO('mysql:host=localhost;dbname=anpeca_petersenyszyn_surveyproject;charset=utf8mb4', 'anpeca_peter', '');
             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
             $query = $db->prepare("INSERT INTO User (randomId, score, classicalScore, popScore, hiphopScore) 
